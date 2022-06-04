@@ -16,7 +16,7 @@
 // Output: "2-5G-3J"
 // Explanation: The string s has been split into three parts, each part has 2 characters except the first part as it could be shorter as mentioned above.
 
-const licenseKeyFormatting = function (s, k) {
+const licenseKeyFormatting = (s, k) => {
   const str = s.replace(/-/g, "").toUpperCase().split("").reverse();
   const arr = [];
   for (let i = 0; i < str.length; i += k) {
